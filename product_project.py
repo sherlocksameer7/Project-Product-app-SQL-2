@@ -13,7 +13,7 @@ product_details = sqlite3.connect("product.db")  # creating a database
 
 get_product_name = input ("Enter the product name: ")
 get_product_price = input ("Enter the product price: ")
-get_distributer_name = input ("Enter the distributer name: ")
+get_distributer_name = input ("Enter the distributor name: ")
 get_manufacturer_name = input ("Enter the manufacturer name: ")
 
 product_details.execute("Insert Into ProductData(ProductName, ProductPrice, ProductDistributorName, ManufacturerName) \
