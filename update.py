@@ -11,7 +11,7 @@ get_manufacturer_name = input ("Enter the new manufacturer name: ")
 
 connection.execute("Update ProductData \
 Set ProductName= '"+get_product_name+"', ProductPrice= "+get_product_price+", ProductDistributorName= '"+get_distributor_name+"',\
-ManufacturerName= '"+get_manufacturer_name+"'" )
+ManufacturerName= '"+get_manufacturer_name+"' Where " )
 
 result = connection.execute("Select * From ProductData")
 
